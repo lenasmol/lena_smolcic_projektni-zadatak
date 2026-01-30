@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'LenaFont';
+    src: url('fonts/lena-smolcic.ttf') format('truetype');
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,6 +11,14 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.ime {
+    font-family: 'LenaFont', serif;
+    font-size: 64px;
+    font-weight: normal;
+    color: #501d1d; /* tamno bordo */
+    text-align: center;
 }
 
 .text-box p {
@@ -89,7 +103,7 @@ a:hover {
     color: #501d1d;
     border-radius: 15px;
     text-align: center;
-    transition: transform 0.3s ease; box-shadow 0.3s ease ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
 
@@ -211,7 +225,7 @@ video {
 }
 
 .text-box a:hover {
-    color: #hsl(0, 95%, 16%);
+    color: hsl(0, 95%, 16%);
 }
 
 .about-me img {
